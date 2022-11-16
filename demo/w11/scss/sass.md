@@ -4,19 +4,19 @@
 
 ### create package.json
 
-```
-$ npm init -y
+```sh
+npm init -y
 ```
 
 ### install sass under node.js
 
-```
-$ npm i sass
+```sh
+npm i sass
 ```
 
 ### sass watch command
 
-```
+```sh
 htctk@MSI MINGW64 ~/Documents/tku_dev/111-1/1A-Web/1111-web-dev (main)
 $ sass --watch demo/w11/portfolio/scss:demo/w11/portfolio/css
 
