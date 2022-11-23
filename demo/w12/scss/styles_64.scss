@@ -1,4 +1,4 @@
-@use 'global_xx';
+@use 'global_64';
 
 /*
 =============== 
@@ -28,11 +28,26 @@ Navbar
   }
 
   .nav-links {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 1.5rem;
+    display: none;
+  }
+
+  @media screen and (min-width:768px) {
+    .nav-links {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      gap: 1.5rem;
+      position: absolute;
+      right: 3rem;
+    }
+  }
+
+  .nav-btn {
+    right: 1.2rem;
     position: absolute;
-    right: 3rem;
+    border: 0;
+    background-color: #00000000;
+    font-size: large;
+    cursor: pointer;
   }
 }
