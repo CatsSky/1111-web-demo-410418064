@@ -6,6 +6,17 @@ Navbar
 ===============
 */
 
+.navbar {
+  &-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 5;
+    box-shadow: var(--light-shadow);
+  }
+}
+
 .nav {
   display: flex;
   align-items: center;
@@ -103,6 +114,7 @@ Navbar
 
   .section-center {
     min-height: calc(100vh - 4rem);
+    padding-bottom: 5rem;
     display: grid;
     place-items: center;
   }
@@ -138,11 +150,47 @@ Navbar
 @media screen and (min-width:768px) {
   .hero {
     .section-center {
-
+      grid-template-columns: 1fr 1fr;
     }
 
     &-img {
       display: block;
+      position: relative;
+
+      &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 2rem;
+        right: -2rem;
+        border: 0.25rem solid var(--clr-primary-5);
+        border-radius: var(--radius);
+      }
+    }
+  }
+  
+}
+
+
+.about {
+  &-center {
+    display: block;
+  }
+  &-img {
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (min-width:992px) {
+  .about {
+    &-center {
+      display: grid;
+      grid-template-columns: 2fr 3fr;
     }
   }
 }
@@ -174,10 +222,19 @@ Navbar
     }
   }
 }
+
 @media screen and (min-width:768px) {
   .services-center {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+  }
+}
+
+@media screen and (min-width:992px) {
+  .services-center {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     column-gap: 2rem;
   }
 }
