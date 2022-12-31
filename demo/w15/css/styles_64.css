@@ -474,6 +474,11 @@ About
   margin: 0 auto;
   margin-bottom: 2rem;
 }
+.projects-center {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+}
 .projects .project {
   position: relative;
   margin-bottom: 1.5rem;
@@ -502,9 +507,6 @@ About
 .projects .project:hover .project-img {
   opacity: 20%;
 }
-.projects .project-center {
-  display: grid;
-}
 .projects .project-info {
   position: absolute;
   text-align: center;
@@ -526,9 +528,40 @@ About
   transition: var(--transition);
 }
 
-@media screen and (min-width: 768) {
-  .projects .project-center {
+@media screen and (min-width: 768px) {
+  .projects-center {
+    display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 992px) {
+  .projects-center {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media screen and (min-width: 1170px) {
+  .projects-center {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 15rem);
+    grid-template-areas: "a b b" "a c d";
+  }
+  .projects-center .project-1 {
+    grid-area: a;
+  }
+  .projects-center .project-2 {
+    grid-area: b;
+  }
+  .projects-center .project-3 {
+    grid-area: c;
+  }
+  .projects-center .project-4 {
+    grid-area: d;
+  }
+  .projects-center .project {
+    height: 100%;
+  }
+  .projects-center .project-img {
+    height: 100%;
   }
 }
 
