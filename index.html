@@ -1,36 +1,424 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style_64.css">
-    <title>111-1 Demo</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PH Lin Homepage</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- css -->
+  <link rel="stylesheet" href="./css/style_64.css" />
 </head>
+
 <body>
-    <div>
-        <ul>
-            <li>
-                <a href="./demo_64.html">My Homepage</a>
-            </li>
-            <li>
-                <a href="/projects/midterm/resume_64.html">My Resume</a>
-            </li>
-            <li>
-                <a href="https://github.com/CatsSky">My Works</a>
-            </li>
-        </ul>
+  <!-- navbar -->
+  <nav class="nav navbar-fixed" id="nav">
+    <div class="nav-center">
+      <!-- nav header -->
+      <div class="nav-header">
+        <a href="index.html#section-hero"><img src="./images/phlin.png" class="nav-logo" alt="nav logo" /></a>
+      </div>
+      <!-- nav-links -->
+      <ul class="nav-links">
+        <li>
+          <a href="index.html#section-hero">hero</a>
+        </li>
+        <li>
+          <a href="index.html#section-about">about</a>
+        </li>
+        <li>
+          <a href="index.html#section-project">works</a>
+        </li>
+        <li>
+          <a href="index.html#section-contact">contact</a>
+        </li>
+      </ul>
+
+      <button class="nav-btn" id="nav-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+
     </div>
+  </nav>
+  <!-- end of navbar -->
+  <!-- sidebar -->
+  <aside class="sidebar" id="sidebar">
+    <div>
+      <ul class="sidebar-links">
+        <li>
+          <a href="index.html">index</a>
+        </li>
+        <li>
+          <a href="learning_64.html">learning</a>
+        </li>
+        <li>
+          <a href="demo_64.html">demos</a>
+        </li>
+      </ul>
+      <!-- social icons -->
+      <ul class="social-icons">
+        <li>
+          <a href="https://www.twitter.com" class="social-icon">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.twitter.com" class="social-icon">
+            <i class="fa-brands fa-tiktok"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.twitter.com" class="social-icon">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.twitter.com" class="social-icon">
+            <i class="fa-brands fa-square-whatsapp"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.twitter.com" class="social-icon">
+            <i class="fa-brands fa-square-instagram"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </aside>
 
-    <section class="hero">
-    </section>
+  <section class="hero" id="section-hero">
+    <span class="hero-span"></span>
+    <div class="section-center">
+      <article class="hero-info">
+        <div class="underline"></div>
+        <h1>I'm Po-Han Lin</h1>
+        <h4>Firmware & Linux Tool Developer</h4>
+        <!-- <a href="./contact_64.html" class="btn hero-btn">contact me</a> -->
+        <!-- social icons -->
+        <ul class="social-icons hero-icons">
+          <li>
+            <a href="https://www.twitter.com" class="social-icon">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com" class="social-icon">
+              <i class="fa-brands fa-tiktok"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com" class="social-icon">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com" class="social-icon">
+              <i class="fa-brands fa-square-whatsapp"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com" class="social-icon">
+              <i class="fa-brands fa-square-instagram"></i>
+            </a>
+          </li>
+        </ul>
+      </article>
+      <!-- <article class="hero-img">
+        <img src="./images/hero-img.jpeg" alt="" class="hero-photo">
+      </article> -->
+    </div>
+  </section>
 
-    <section class="resume">
-    </section>
+  <section class="section bg-grey" id="section-services">
+    <!-- section title -->
+    <div class="section-title">
+      <h2>Skills</h2>
+      <div class="underline"></div>
+    </div>
+    <!--end of section title -->
+    <div class="section-center services-center">
+      <!-- single service -->
+      <article class="service">
+        <i class="fas fa-code service-icon"></i>
+        <h4>Competetive Programming</h4>
+        <div class="underline"></div>
+        <p>
+          ICPC Asia Regional Taipei, Bronze Award
+          <br>
+          NCPC, Excellent Work
+        </p>
+      </article>
+      <!-- end of single service -->
+      <!-- single service -->
+      <article class="service">
+        <i class="fab fa-sketch service-icon"></i>
+        <h4>Linux</h4>
+        <div class="underline"></div>
+        <p>
+          6+ years of experience with linux based system.
+          <br>
+          Daily drives Arch Linux btw.
+        </p>
+      </article>
+      <!-- end of single service -->
+      <!-- single service -->
+      <article class="service">
+        <i class="fab fa-android service-icon"></i>
+        <h4>C++</h4>
+        <div class="underline"></div>
+        <p>
+          6+ years of experience with C++.
+          <br>
+          Very familiar with modern C++ concept.
+        </p>
+      </article>
+      <!-- end of single service -->
+    </div>
+  </section>
 
-    <section class="works">
-    </section>
-    
-    <script src="./js/script_64.js"></script>
+  <!-- projects -->
+  <section class="section projects" id="section-project">
+    <!-- section title -->
+    <div class="section-title">
+      <h2>latest works</h2>
+      <div class="underline"></div>
+      <p class="projects-text">
+      </p>
+    </div>
+    <!--end of section title -->
+    <div class="section-center projects-center">
+      <!-- single project -->
+      <a href="https://github.com/CatsSky/mLISP" class="project-1">
+        <article class="project">
+          <img
+            src="./images/lisp.png"
+            alt="single project"
+            class="project-img"
+          />
+          <div class="project-info">
+            <h4>Minimal Lisp Interpreter</h4>
+            <p>An interpreter for basic Lisp functionality</p>
+          </div>
+        </article>
+      </a>
+      <!-- end of single project -->
+      <!-- single project -->
+      <a href="https://github.com/CatsSky/file-host" class="project-2">
+        <article class="project">
+          <img
+            src="./images/cloud.jpg"
+            alt="single project"
+            class="project-img"
+          />
+          <div class="project-info">
+            <h4>File host</h4>
+            <p>A simple web service that can host files for limited amount of time</p>
+          </div>
+        </article>
+      </a>
+      <!-- end of single project --><!-- single project -->
+      <a href="https://github.com/CatsSky/rose" class="project-3">
+        <article class="project">
+          <img
+            src="./images/web.png"
+            alt="single project"
+            class="project-img"
+          />
+          <div class="project-info">
+            <h4>Rose</h4>
+            <p>A minimal web browser on Linux based on webkit 2.0</p>
+          </div>
+        </article>
+      </a>
+      <!-- end of single project -->
+    </div>
+  </section>
+  <!-- end of projects -->
+
+  <!-- about -->
+  <section class="section about" id="section-about">
+    <div class="section-center about-center">
+      <!-- about img -->
+      <article class="about-img">
+        <img
+          src="./images/bike.jpg"
+          class="hero-photo"
+          alt="about img"
+        />
+      </article>
+      <!-- about info -->
+      <article class="about-info">
+        <!-- section title -->
+        <div class="section-title about-title">
+          <h2>about</h2>
+          <div class="underline"></div>
+        </div>
+        <!--end of section title -->
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quae,
+          eum maiores est enim earum fugiat aspernatur. Fuga qui iste amet
+          reiciendis possimus rerum omnis recusandae molestias error
+          consequuntur, doloribus inventore reprehenderit officiis. Dolore
+          aut, repellendus eius fugiat numquam cumque.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quae,
+          eum maiores est enim earum fugiat aspernatur. Fuga qui iste amet
+          reiciendis possimus rerum omnis recusandae molestias error
+          consequuntur, doloribus inventore reprehenderit officiis. Dolore
+          aut, repellendus eius fugiat numquam cumque.
+        </p>
+      </article>
+    </div>
+  </section>
+
+
+<!-- connect -->
+<section class="connect" id="section-contact">
+  <canvas id="canvas">Canvas is not supported in your browser.</canvas>
+  <canvas id="canvas2">Canvas is not supported in your browser.</canvas>
+  <div class="video-banner">
+    <!-- section title -->
+    <div class="section-title">
+      <h2>let's get in touch</h2>
+      <div class="underline"></div>
+    </div>
+    <!--end of section title -->
+    <p class="video-text">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ratione
+      perferendis exercitationem sit. Beatae eius commodi officiis rem
+      soluta ratione dignissimos quisquam tempore laudantium, porro vitae
+      cupiditate dicta magni quas corrupti aperiam, rerum minus odio totam
+      repellendus delectus nostrum veniam!
+    </p>
+    <a href="contact_64.html" class="btn">contact me</a>
+  </div>
+</section>
+<!-- end of connect -->
+
+  <section class="section timeline">
+    <!-- section title -->
+    <div class="section-title">
+      <h2>timeline</h2>
+      <div class="underline"></div>
+    </div>
+    <!--end of section title -->
+    <div class="section-center timeline-center">
+      <!-- single timeline item -->
+      <article class="timeline-item reveal">
+        <h4>2015</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+          consequuntur voluptates tempore numquam? Quidem incidunt fugit quasi
+          autem, ea excepturi.
+        </p>
+        <span class="number"> 1 </span>
+      </article>
+      <!-- end of  single timeline item -->
+      <!-- single timeline item -->
+      <article class="timeline-item reveal">
+        <h4>2016</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+          consequuntur voluptates tempore numquam? Quidem incidunt fugit quasi
+          autem, ea excepturi.
+        </p>
+        <span class="number"> 2 </span>
+      </article>
+      <!-- end of  single timeline item -->
+      <!-- single timeline item -->
+      <article class="timeline-item reveal">
+        <h4>2017</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+          consequuntur voluptates tempore numquam? Quidem incidunt fugit quasi
+          autem, ea excepturi.
+        </p>
+        <span class="number"> 3 </span>
+      </article>
+      <!-- end of  single timeline item -->
+      <!-- single timeline item -->
+      <article class="timeline-item reveal">
+        <h4>2018</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+          consequuntur voluptates tempore numquam? Quidem incidunt fugit quasi
+          autem, ea excepturi.
+        </p>
+        <span class="number"> 4 </span>
+      </article>
+      <!-- end of  single timeline item -->
+      <!-- single timeline item -->
+      <article class="timeline-item reveal">
+        <h4>2019</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+          consequuntur voluptates tempore numquam? Quidem incidunt fugit quasi
+          autem, ea excepturi.
+        </p>
+        <span class="number"> 5 </span>
+      </article>
+      <!-- end of  single timeline item -->
+      <!-- single timeline item -->
+      <article class="timeline-item reveal">
+        <h4>2020</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+          consequuntur voluptates tempore numquam? Quidem incidunt fugit quasi
+          autem, ea excepturi.
+        </p>
+        <span class="number"> 6 </span>
+      </article>
+      <!-- end of  single timeline item -->
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <ul class="social-icons">
+      <!-- single item -->
+      <li>
+        <a href="https://www.twitter.com" class="social-icon">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+      <!-- end of single item -->
+      <!-- single item -->
+      <li>
+        <a href="https://www.twitter.com" class="social-icon">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </li>
+      <!-- end of single item -->
+      <!-- single item -->
+      <li>
+        <a href="https://www.twitter.com" class="social-icon">
+          <i class="fab fa-squarespace"></i>
+        </a>
+      </li>
+      <!-- end of single item -->
+      <!-- single item -->
+      <li>
+        <a href="https://www.twitter.com" class="social-icon">
+          <i class="fab fa-behance"></i>
+        </a>
+      </li>
+      <!-- end of single item -->
+      <!-- single item -->
+      <li>
+        <a href="https://www.twitter.com" class="social-icon">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </li>
+      <!-- end of single item -->
+    </ul>
+
+    <p>&copy; <span id="date"></span> P.H. Lin. All rights reserved.</p>
+  </footer>
+
+  <script src="./js/script_64.js"></script>
 </body>
+
 </html>

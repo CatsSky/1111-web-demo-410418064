@@ -60,7 +60,11 @@ b569bcb CatsSky Mon Dec 12 13:33:43 2022 +0800  w14: part 1 and part 2
 ```sh
 $ git log --pretty=format:"%h%x09%an%x09%ad%x09%s" --after="2022-12-20"
 
-83a795d CatsSky Wed Dec 21 14:51:38 2022 +0800  w16 connect section and timeline
+38db602 CatsSky Sat Dec 31 13:34:50 2022 +0800   w15 p2 finish
+6ba8dc7 CatsSky Sat Dec 31 13:34:32 2022 +0800   w16 md log
+872e73f CatsSky Sat Dec 31 13:34:11 2022 +0800   make combined md for final
+83a795d CatsSky Wed Dec 21 14:51:38 2022 +0800   w16 connect section and timeline
+0c3e17a CatsSky Wed Dec 21 13:27:10 2022 +0800   w15 progress
 ```
 
 ## W16
@@ -86,3 +90,10 @@ $ git log --pretty=format:"%h%x09%an%x09%ad%x09%s" --after="2022-12-20"
 
 83a795d CatsSky Wed Dec 21 14:51:38 2022 +0800  w16 connect section and timeline
 ```
+
+## w11~w16 log images
+![](1.png)
+![](2.png)
+![](3.png)
+![](4.png)
+![](5_6.png)

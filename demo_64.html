@@ -2,61 +2,183 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Homepage</title>
-    <link rel="stylesheet" href="./css/style_64.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PH Lin Learning</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- css -->
+  <link rel="stylesheet" href="./css/style_64.css" />
 </head>
 
 <body>
-    <script src="js/demo_64.js"></script>
-    <nav class="nav">
-        <div class="nav-center">
-            <div class="nav-header">
-                <h3>
-                    Hank Lin
-                </h3>
-            </div>
+  <!-- navbar -->
+  <nav class="nav navbar-fixed" id="nav">
+    <div class="nav-center">
+      <!-- nav header -->
+      <div class="nav-header">
+        <a href="index.html#section-hero"><img src="./images/phlin.png" class="nav-logo" alt="nav logo" /></a>
+      </div>
+      <!-- nav-links -->
+      <ul class="nav-links">
+        <li>
+          <a href="index.html#section-hero">home</a>
+        </li>
+        <li>
+          <a href="index.html#section-about">about</a>
+        </li>
+        <li>
+          <a href="index.html#section-project">projects</a>
+        </li>
+        <li>
+          <a href="contact_64.html">contact</a>
+        </li>
+      </ul>
 
-            <ul class="nav-links">
-                <li onclick="change_page('demo/w02/w02_index.html')">
-                    <a href="#">w02-intro</a>
-                </li>
-                <li onclick="change_page('demo/w03/card_64.html')">
-                    <a href="#">w03-cards</a>
-                </li>
-                <li onclick="change_page('demo/w05/blog_64.html')">
-                    <a href="#">w05-blogs</a>
-                </li>
-                <li onclick="change_page('demo/w06/blog_64.html')">
-                    <a href="#">w06-grid</a>
-                </li>
-                <li>
-                    <a href="demo/w08/landing_64.html">w08-landing</a>
-                </li>
-                <li onclick="change_page('demo/w09/resume_64.html')">
-                    <a href="#">w09-resume</a>
-                </li>
-            </ul>
+      <button class="nav-btn" id="nav-btn">
+        <i class="fas fa-bars"></i>
+      </button>
 
-            <ul class="nav-links">
-                <li>
-                    <a href="#">demo</a>
-                </li>
-                <li>
-                    <a href="/demo/w09/resume_64.html">resume</a>
-                </li>
+    </div>
+  </nav>
+  <!-- end of navbar -->
+  <!-- sidebar -->
+  <aside class="sidebar" id="sidebar">
+    <div>
+      <ul class="sidebar-links">
+        <li>
+          <a href="index.html">index</a>
+        </li>
+        <li>
+          <a href="learning_64.html">learning</a>
+        </li>
+        <li>
+          <a href="demo_64.html">demos</a>
+        </li>
+      </ul>
+      <!-- social icons -->
+      <ul class="social-icons">
+        <li>
+          <a href="https://www.twitter.com" class="social-icon">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.twitter.com" class="social-icon">
+            <i class="fa-brands fa-tiktok"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.twitter.com" class="social-icon">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.twitter.com" class="social-icon">
+            <i class="fa-brands fa-square-whatsapp"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.twitter.com" class="social-icon">
+            <i class="fa-brands fa-square-instagram"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </aside>
 
-            </ul>
+  <section class="section">
+      <div class="section-center demo-center">
+        <div class="section-title">
+            <h2>Demos</h2>
+            <div class="underline"></div>
         </div>
-    </nav>
+        <ul>
+          <li>
+            <a href="./demo/w02/w02_index.html" class="btn">w02</a>
+          </li>
+          <li>
+            <a href="./demo/w03/card_64.html" class="btn">w03</a>
+          </li>
+          <li>
+            <a href="./demo/w05/blog_64.html" class="btn">w05</a>
+          </li>
+          <li>
+            <a href="./demo/w06/blog_64.html" class="btn">w06</a>
+          </li>
+          <li>
+            <a href="./demo/w08/landing_64.html" class="btn">w08</a>
+          </li>
+          <li>
+            <a href="./demo/w09/multipage_64.html" class="btn">w09</a>
+          </li>
+          <li>
+            <a href="./demo/w11/index.html" class="btn">w11</a>
+          </li>
+          <li>
+            <a href="./demo/w12/index.html" class="btn">w12</a>
+          </li>
+          <li>
+            <a href="./demo/w13/index.html" class="btn">w13</a>
+          </li>
+          <li>
+            <a href="./demo/w14/index.html" class="btn">w14</a>
+          </li>
+          <li>
+            <a href="./demo/w15/index.html" class="btn">w15</a>
+          </li>
+          <li>
+            <a href="./demo/w16/index.html" class="btn">w16</a>
+          </li>
+        </ul>
+      </div>
+  </section>
 
-    <section class="show-classdemo">
-        <iframe class="demo-iframe" id="demo-content" src="">
-    </section>
 
+  <footer class="footer">
+    <ul class="social-icons">
+      <!-- single item -->
+      <li>
+        <a href="https://www.twitter.com" class="social-icon">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+      <!-- end of single item -->
+      <!-- single item -->
+      <li>
+        <a href="https://www.twitter.com" class="social-icon">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </li>
+      <!-- end of single item -->
+      <!-- single item -->
+      <li>
+        <a href="https://www.twitter.com" class="social-icon">
+          <i class="fab fa-squarespace"></i>
+        </a>
+      </li>
+      <!-- end of single item -->
+      <!-- single item -->
+      <li>
+        <a href="https://www.twitter.com" class="social-icon">
+          <i class="fab fa-behance"></i>
+        </a>
+      </li>
+      <!-- end of single item -->
+      <!-- single item -->
+      <li>
+        <a href="https://www.twitter.com" class="social-icon">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </li>
+      <!-- end of single item -->
+    </ul>
+
+    <p>&copy; <span id="date"></span> P.H. Lin. All rights reserved.</p>
+  </footer>
+
+  <script src="./js/script_64.js"></script>
 </body>
-
 
 </html>
